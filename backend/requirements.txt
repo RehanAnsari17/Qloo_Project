@@ -6,4 +6,4 @@ google-generativeai==0.7.0  # ✅ Use prebuilt version (0.8+ requires maturin)
 python-dotenv==1.0.0
 httpx==0.27.0
 requests==2.32.3
-pyrebase4==5.0.0         # ✅ Make sure this is compatible with your Firebase usage
+pyrebase4==4.8.0
