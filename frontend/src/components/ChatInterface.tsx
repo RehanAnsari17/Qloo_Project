@@ -48,7 +48,8 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
   const loadChatSession = async () => {
     try {
-      const response = await axios.get(`http://qloo-project.onrender.com/api/chat-session/${sessionId}`);
+      const BASE_URL = import.meta.env.VITE_API_URL;
+      const response = await axios.get(`${BASE_URL}/api/chat-session/${sessionId}`);
       setMessages(response.data.messages);
       setIsChatEnded(!response.data.is_active);
     } catch (error) {
@@ -114,7 +115,8 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
     setIsTyping(true);
 
     try {
-      const response = await axios.post('http://qloo-project.onrender.com/api/chat', {
+      const BASE_URL = import.meta.env.VITE_API_URL;
+      const response = await axios.post(`${BASE_URL}/api/chat`, {
         message: messageText,
         session_id: sessionId
       });
@@ -137,7 +139,8 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
 
   const endChat = async () => {
     try {
-      await axios.post(`http://qloo-project.onrender.com/api/end-chat/${sessionId}`);
+      const BASE_URL = import.meta.env.VITE_API_URL;
+      await axios.post(`${BASE_URL}/api/end-chat/${sessionId}`);
       setIsChatEnded(true);
       
       // Update Firebase with ended status

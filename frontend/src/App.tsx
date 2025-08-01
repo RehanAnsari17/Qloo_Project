@@ -105,9 +105,9 @@ function App() {
       };
       
       console.log('Creating new chat with profile:', simpleProfile);
-      
-      const response = await axios.post('http://qloo-project.onrender.com/api/register-user', simpleProfile);
-      
+      const BASE_URL = import.meta.env.VITE_API_URL;
+      const response = await axios.post(`${BASE_URL}/api/register-user`, simpleProfile);
+
       if (response.data && response.data.session_id) {
         console.log('New chat created successfully:', response.data.session_id);
         setSessionId(response.data.session_id);

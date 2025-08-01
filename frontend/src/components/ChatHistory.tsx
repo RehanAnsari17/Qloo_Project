@@ -58,7 +58,8 @@ export const ChatHistory: React.FC<ChatHistoryProps> = ({
       
       // Fallback to backend if no Firebase data
       if (formattedSessions.length === 0) {
-        const response = await axios.get('http://qloo-project.onrender.com/api/chat-history');
+        const BASE_URL = import.meta.env.VITE_API_URL;
+        const response = await axios.get(`${BASE_URL}/api/chat-history`);
         setHistorySessions(response.data.sessions);
       }
     } catch (error) {
@@ -93,7 +94,8 @@ export const ChatHistory: React.FC<ChatHistoryProps> = ({
         onViewSession(convertedSession);
       } else {
         // Fallback to backend
-        const response = await axios.get(`http://qloo-project.onrender.com/api/chat-session/${sessionId}`);
+        const BASE_URL = import.meta.env.VITE_API_URL;
+        const response = await axios.get(`${BASE_URL}/api/chat-session/${sessionId}`);
         onViewSession(response.data);
       }
     } catch (error) {

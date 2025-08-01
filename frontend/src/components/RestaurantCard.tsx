@@ -95,11 +95,12 @@ export const RestaurantCard: React.FC<RestaurantCardProps> = ({
     setIsSubmittingFeedback(true);
     
   try {
-      await axios.post('http://qloo-project.onrender.com/api/restaurant-preference', {
-        restaurant_id: restaurant.id,
-        preference: pendingPreference,
-        session_id: sessionId,
-        feedback: feedbackText.trim() || null
+    const BASE_URL = import.meta.env.VITE_API_URL;
+    await axios.post(`${BASE_URL}/api/restaurant-preference`, {
+      restaurant_id: restaurant.id,
+      preference: pendingPreference,
+      session_id: sessionId,
+      feedback: feedbackText.trim() || null
       });
 
     // Send to Firebase
@@ -160,7 +161,8 @@ export const RestaurantCard: React.FC<RestaurantCardProps> = ({
   const handleMoreInfo = async () => {
     setIsLoadingDetails(true);
     try {
-      const response = await axios.get(`http://qloo-project.onrender.com/api/restaurant-details/${restaurant.id}`);
+      const BASE_URL = import.meta.env.VITE_API_URL;
+      const response = await axios.get(`${BASE_URL}/api/restaurant-details/${restaurant.id}`);
       setRestaurantDetails(response.data);
       setShowDetails(true);
     } catch (error) {
