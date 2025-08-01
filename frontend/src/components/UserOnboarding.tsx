@@ -43,7 +43,7 @@ export const UserOnboarding: React.FC<UserOnboardingProps> = ({ onUserRegistered
     setIsLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:8000/api/register-user', formData);
+      const response = await axios.post('http://qloo-project.onrender.com/api/register-user', formData);
       onUserRegistered(formData, response.data.session_id);
     } catch (error) {
       console.error('Error registering user:', error);

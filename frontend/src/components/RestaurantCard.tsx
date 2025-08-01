@@ -95,7 +95,7 @@ export const RestaurantCard: React.FC<RestaurantCardProps> = ({
     setIsSubmittingFeedback(true);
     
   try {
-      await axios.post('http://localhost:8000/api/restaurant-preference', {
+      await axios.post('http://qloo-project.onrender.com/api/restaurant-preference', {
         restaurant_id: restaurant.id,
         preference: pendingPreference,
         session_id: sessionId,
@@ -160,7 +160,7 @@ export const RestaurantCard: React.FC<RestaurantCardProps> = ({
   const handleMoreInfo = async () => {
     setIsLoadingDetails(true);
     try {
-      const response = await axios.get(`http://localhost:8000/api/restaurant-details/${restaurant.id}`);
+      const response = await axios.get(`http://qloo-project.onrender.com/api/restaurant-details/${restaurant.id}`);
       setRestaurantDetails(response.data);
       setShowDetails(true);
     } catch (error) {

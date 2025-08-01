@@ -98,7 +98,7 @@ export const UserAuthentication: React.FC<UserAuthenticationProps> = ({ onUserAu
           location: profile.location
         };
         
-        const sessionResponse = await fetch('http://localhost:8000/api/register-user', {
+        const sessionResponse = await fetch('http://qloo-project.onrender.com/api/register-user', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(simpleProfile)
@@ -163,7 +163,7 @@ export const UserAuthentication: React.FC<UserAuthenticationProps> = ({ onUserAu
       console.log('Creating session with profile:', profile);
       
       // Create session
-      const sessionResponse = await fetch('http://localhost:8000/api/register-user', {
+      const sessionResponse = await fetch('http://qloo-project.onrender.com/api/register-user', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(profile)
