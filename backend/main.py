@@ -30,7 +30,10 @@ firebase_config = {
 
 
 app = FastAPI(title="Restaurant Chatbot API", version="1.0.0")
-
+origins = [
+    "https://rococo-seahorse-6f3799.netlify.app/",  # replace with your actual frontend URL
+    "http://localhost:5173"  # optional for local dev
+]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],
