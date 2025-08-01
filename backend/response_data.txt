@@ -1,0 +1,685 @@
+{
+  "success": true,
+  "results": {
+    "entities": [
+      {
+        "name": "Marz-O-Rin",
+        "entity_id": "057B95BA-2396-4A33-A627-14BEC77C2E5C",
+        "type": "urn:entity",
+        "subtype": "urn:entity:place",
+        "properties": {
+          "description": "Sandwiches, filled rolls & burgers make up the menu at this counter serve in a heritage building.",
+          "address": "Bakthiar Plaza 6, MG Road, Opposite Bombay Store, Camp Pune, Maharashtra 411001 India",
+          "website": "http://www.marzorin.com/",
+          "phone": "+917722094983",
+          "business_rating": 4.2,
+          "is_closed": false,
+          "menu_url": "http://www.marzorin.com/menu.pdf",
+          "keywords": [
+            {
+              "name": "chicken sandwich",
+              "count": 325
+            },
+            {
+              "name": "green chutney sandwich",
+              "count": 237
+            },
+            {
+              "name": "sandwich is",
+              "count": 122
+            },
+            {
+              "name": "nostalgic",
+              "count": 107
+            },
+            {
+              "name": "balcony",
+              "count": 85
+            },
+            {
+              "name": "chillers",
+              "count": 58
+            },
+            {
+              "name": "plum cake",
+              "count": 57
+            },
+            {
+              "name": "chicken mayo sandwich",
+              "count": 51
+            },
+            {
+              "name": "cheese roll",
+              "count": 38
+            },
+            {
+              "name": "cheese spaghetti",
+              "count": 14
+            }
+          ],
+          "hours": {
+            "Monday": [
+              {
+                "opens": "T08:30:00",
+                "closes": "T22:00:00"
+              }
+            ],
+            "Tuesday": [
+              {
+                "opens": "T08:30:00",
+                "closes": "T22:00:00"
+              }
+            ],
+            "Wednesday": [
+              {
+                "opens": "T08:30:00",
+                "closes": "T22:00:00"
+              }
+            ],
+            "Thursday": [
+              {
+                "opens": "T08:30:00",
+                "closes": "T22:00:00"
+              }
+            ],
+            "Friday": [
+              {
+                "opens": "T08:30:00",
+                "closes": "T22:00:00"
+              }
+            ],
+            "Saturday": [
+              {
+                "opens": "T08:30:00",
+                "closes": "T22:00:00"
+              }
+            ],
+            "Sunday": [
+              {
+                "opens": "T08:30:00",
+                "closes": "T22:00:00"
+              }
+            ]
+          },
+          "specialty_dishes": [
+            {
+              "id": "urn:tag:specialty_dish:place:chutney_sandwich",
+              "name": "Chutney Sandwich",
+              "type": "urn:tag:specialty_dish:place",
+              "weight": 1
+            },
+            {
+              "id": "urn:tag:specialty_dish:place:chicken_roll",
+              "name": "Chicken Roll",
+              "type": "urn:tag:specialty_dish:place",
+              "weight": 0.8333333333333334
+            },
+            {
+              "id": "urn:tag:specialty_dish:place:grilled_sandwiches",
+              "name": "Grilled Sandwiches",
+              "type": "urn:tag:specialty_dish:place",
+              "weight": 0.6666666666666666
+            }
+          ],
+          "images": [
+            {
+              "url": "https://images.qloo.com/i/057B95BA-2396-4A33-A627-14BEC77C2E5C-0BaKdx-420x-outside.jpg",
+              "type": "urn:image:place:unknown"
+            }
+          ],
+          "price_range": {
+            "from": 1,
+            "to": 4,
+            "currency": "usd"
+          },
+          "price_level": 2,
+          "good_for": [
+            {
+              "id": "urn:tag:children:place:good_kids",
+              "name": "Good for kids",
+              "type": "urn:tag:children:place",
+              "weight": 0.8333333333333333
+            },
+            {
+              "id": "urn:tag:ambience:place:large_group",
+              "name": "Large Group",
+              "type": "urn:tag:ambience:place",
+              "weight": 0.9459459459459459
+            }
+          ],
+          "localities": [
+            {
+              "entity_id": "82CF7E0C-22DB-4CF1-81C3-07721639CE4C",
+              "name": "Pune Cantonment",
+              "place": "suburb",
+              "admin_level": 10,
+              "locality_id": "n669519639"
+            },
+            {
+              "entity_id": "93CBAF56-B58C-4C4E-855E-8A5ACB71FD74",
+              "name": "India",
+              "place": "country",
+              "admin_level": 2,
+              "boundary": "administrative",
+              "locality_id": "r304716",
+              "country_code": "IN"
+            },
+            {
+              "entity_id": "C2C2331C-6BED-4C24-A3E1-93775A4E4BA8",
+              "name": "Maharashtra",
+              "place": "state",
+              "admin_level": 4,
+              "boundary": "administrative",
+              "locality_id": "r1950884"
+            },
+            {
+              "entity_id": "C1EE76F2-D676-42C9-839D-B98CB78B04E3",
+              "name": "Pune City",
+              "admin_level": 6,
+              "boundary": "administrative",
+              "locality_id": "r10351626"
+            },
+            {
+              "entity_id": "1D2946CC-9697-4AED-93F4-4DE4523F665C",
+              "name": "Pune",
+              "admin_level": 5,
+              "boundary": "administrative",
+              "locality_id": "r1986140"
+            }
+          ],
+          "neighborhood": "Pune Cantonment",
+          "important_words": [
+            "marz",
+            "o",
+            "rin"
+          ],
+          "geocode": {
+            "name": "Pune Cantonment",
+            "city": "Pune Metropolitan Region",
+            "admin1_region": "Pune City",
+            "admin2_region": "Maharashtra",
+            "country_code": "IN",
+            "country": "India"
+          }
+        },
+        "popularity": 0.9978595744572283,
+        "location": {
+          "lat": 18.516455,
+          "lon": 73.878975,
+          "geohash": "tek934v40vk6"
+        },
+        "tags": [
+          {
+            "id": "urn:tag:offerings:place:coffee",
+            "name": "Coffee",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.8269230769230769
+          },
+          {
+            "id": "urn:tag:payments:place:cash_only",
+            "name": "Cash-only",
+            "type": "urn:tag:payments:place",
+            "weight": 0.5454545454545454
+          },
+          {
+            "id": "urn:tag:dining_options:place:lunch",
+            "name": "Lunch",
+            "type": "urn:tag:dining_options:place",
+            "weight": 0.5
+          },
+          {
+            "id": "urn:tag:parking:place:paid_parking_lot",
+            "name": "Paid parking lot",
+            "type": "urn:tag:parking:place",
+            "weight": 0.4375
+          },
+          {
+            "id": "urn:tag:service_options:place:no_contact_delivery",
+            "name": "No-contact delivery",
+            "type": "urn:tag:service_options:place",
+            "weight": 0.9666666666666667
+          },
+          {
+            "id": "urn:tag:offerings:place:small_plates",
+            "name": "Small plates",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.8942307692307692
+          },
+          {
+            "id": "urn:tag:dining_options:place:dessert",
+            "name": "Dessert",
+            "type": "urn:tag:dining_options:place",
+            "weight": 0.5625
+          },
+          {
+            "id": "urn:tag:payments:place:credit_cards",
+            "name": "Credit cards",
+            "type": "urn:tag:payments:place",
+            "weight": 0.7272727272727273
+          },
+          {
+            "id": "urn:tag:payments:place:price_level",
+            "name": "Price level",
+            "type": "urn:tag:payments:place"
+          },
+          {
+            "id": "urn:tag:dining_options:place:order_ahead",
+            "name": "Order ahead",
+            "type": "urn:tag:dining_options:place"
+          },
+          {
+            "id": "urn:tag:offerings:place:cuisine",
+            "name": "Cuisine",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.19230769230769232
+          },
+          {
+            "id": "urn:tag:genre:place:hamburger",
+            "name": "Hamburger",
+            "type": "urn:tag:genre:place",
+            "weight": 0.7020493956910141
+          },
+          {
+            "id": "urn:tag:genre:place",
+            "name": "Place",
+            "type": "urn:tag:genre:place"
+          },
+          {
+            "id": "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
+            "name": "Wheelchair accessible parking lot",
+            "type": "urn:tag:accessibility:place",
+            "weight": 0.6875
+          },
+          {
+            "id": "urn:tag:getting_here:place:not_display",
+            "name": "NOT FOR DISPLAY",
+            "type": "urn:tag:getting_here:place"
+          },
+          {
+            "id": "urn:tag:category:place:breakfast_restaurant",
+            "name": "Breakfast Restaurant",
+            "type": "urn:tag:category:place",
+            "weight": 0.993188854489164
+          },
+          {
+            "id": "urn:tag:credit_card:place:mastercard",
+            "name": "MasterCard",
+            "type": "urn:tag:credit_card:place",
+            "weight": 0.4166666666666667
+          },
+          {
+            "id": "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+            "name": "Wheelchair accessible restroom",
+            "type": "urn:tag:accessibility:place",
+            "weight": 0.875
+          },
+          {
+            "id": "urn:tag:offerings:place:cocktails",
+            "name": "Cocktails",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.75
+          },
+          {
+            "id": "urn:tag:cost_description:place:moderately_expensive",
+            "name": "Moderately expensive",
+            "type": "urn:tag:cost_description:place"
+          },
+          {
+            "id": "urn:tag:service_options:place:takeout",
+            "name": "Takeout",
+            "type": "urn:tag:service_options:place",
+            "weight": 0.6333333333333333
+          },
+          {
+            "id": "urn:tag:offerings:place:alcohol",
+            "name": "Alcohol",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.6346153846153846
+          },
+          {
+            "id": "urn:tag:planning:place:usually_a_wait",
+            "name": "Usually a wait",
+            "type": "urn:tag:planning:place",
+            "weight": 0.4
+          },
+          {
+            "id": "urn:tag:dining_options:place:seating",
+            "name": "Seating",
+            "type": "urn:tag:dining_options:place",
+            "weight": 0.375
+          },
+          {
+            "id": "urn:tag:service_options:place:dine_in",
+            "name": "Dine-in",
+            "type": "urn:tag:service_options:place",
+            "weight": 0.5
+          },
+          {
+            "id": "urn:tag:children:place:kids_menu",
+            "name": "Kids menu",
+            "type": "urn:tag:children:place",
+            "weight": 0.9444444444444444
+          },
+          {
+            "id": "urn:tag:genre:place:breakfast",
+            "name": "Breakfast",
+            "type": "urn:tag:genre:place",
+            "weight": 0.990803993694167
+          },
+          {
+            "id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+            "name": "Wheelchair accessible entrance",
+            "type": "urn:tag:accessibility:place",
+            "weight": 0.5625
+          },
+          {
+            "id": "urn:tag:category:place:coffee_shop",
+            "name": "Coffee Shop",
+            "type": "urn:tag:category:place",
+            "weight": 0.9860681114551084
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:macaroni_cheese",
+            "name": "Macaroni And Cheese",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:genre:place:health_food",
+            "name": "Health Food",
+            "type": "urn:tag:genre:place",
+            "weight": 0.9253809774040987
+          },
+          {
+            "id": "urn:tag:category:place:hamburger_restaurant",
+            "name": "Hamburger Restaurant",
+            "type": "urn:tag:category:place",
+            "weight": 0.8142414860681114
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:chutney_sandwiches",
+            "name": "Chutney Sandwiches",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:service_options:place:drive_through",
+            "name": "Drive-through",
+            "type": "urn:tag:service_options:place",
+            "weight": 0.9
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:sandwiches",
+            "name": "And Sandwiches",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:chicken_mayonnaise_sandwich",
+            "name": "Chicken Mayonnaise Sandwich",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:genre:place:coffee_shop",
+            "name": "Coffee Shop",
+            "type": "urn:tag:genre:place",
+            "weight": 0.991854965843405
+          },
+          {
+            "id": "urn:tag:offerings:place:vegetarian_options_only",
+            "name": "Vegetarian options only",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.9519230769230769
+          },
+          {
+            "id": "urn:tag:offerings:place:late_night_food",
+            "name": "Late-night food",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.8365384615384615
+          },
+          {
+            "id": "urn:tag:dining_options:place:brunch",
+            "name": "Brunch",
+            "type": "urn:tag:dining_options:place",
+            "weight": 1
+          },
+          {
+            "id": "urn:tag:category:place:fast_food_restaurant",
+            "name": "Fast Food Restaurant",
+            "type": "urn:tag:category:place",
+            "weight": 0.9944272445820433
+          },
+          {
+            "id": "urn:tag:dining_options:place:breakfast",
+            "name": "Breakfast",
+            "type": "urn:tag:dining_options:place",
+            "weight": 0.875
+          },
+          {
+            "id": "urn:tag:genre:place:fast_food",
+            "name": "Fast Food",
+            "type": "urn:tag:genre:place",
+            "weight": 0.9942196531791907
+          },
+          {
+            "id": "urn:tag:service_options:place:delivery",
+            "name": "Delivery",
+            "type": "urn:tag:service_options:place",
+            "weight": 0.5666666666666667
+          },
+          {
+            "id": "urn:tag:offerings:place:hard_liquor",
+            "name": "Hard liquor",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.6634615384615384
+          },
+          {
+            "id": "urn:tag:category:place:cafe",
+            "name": "Cafe",
+            "type": "urn:tag:category:place",
+            "weight": 0.9851393188854489
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:chicken_roll",
+            "name": "Chicken Roll",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:genre:place:sandwich_shop",
+            "name": "Sandwich Shop",
+            "type": "urn:tag:genre:place",
+            "weight": 0.9206516027325276
+          },
+          {
+            "id": "urn:tag:payments:place:debit_cards",
+            "name": "Debit cards",
+            "type": "urn:tag:payments:place",
+            "weight": 0.7727272727272727
+          },
+          {
+            "id": "urn:tag:payments:place:nfc_mobile_payments",
+            "name": "NFC mobile payments",
+            "type": "urn:tag:payments:place",
+            "weight": 0.9090909090909091
+          },
+          {
+            "id": "urn:tag:parking:place:paid_street_parking",
+            "name": "Paid street parking",
+            "type": "urn:tag:parking:place",
+            "weight": 0.25
+          },
+          {
+            "id": "urn:tag:accessibility:place:wheelchair_accessible_seating",
+            "name": "Wheelchair accessible seating",
+            "type": "urn:tag:accessibility:place",
+            "weight": 0.9375
+          },
+          {
+            "id": "urn:tag:service_options:place:onsite_services",
+            "name": "Onsite services",
+            "type": "urn:tag:service_options:place",
+            "weight": 0.9333333333333333
+          },
+          {
+            "id": "urn:tag:service_options:place:outdoor_seating",
+            "name": "Outdoor seating",
+            "type": "urn:tag:service_options:place",
+            "weight": 0.6666666666666666
+          },
+          {
+            "id": "urn:tag:dining_options:place:catering",
+            "name": "Catering",
+            "type": "urn:tag:dining_options:place",
+            "weight": 0.4375
+          },
+          {
+            "id": "urn:tag:category:place:sandwich_shop",
+            "name": "Sandwich Shop",
+            "type": "urn:tag:category:place",
+            "weight": 0.9170278637770898
+          },
+          {
+            "id": "urn:tag:genre:place:restaurant:cafe",
+            "name": "Cafe",
+            "type": "urn:tag:genre:place",
+            "weight": 0.9863373620599054
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:macaroons",
+            "name": "Macaroons",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:planning:place:accepts_reservations",
+            "name": "Accepts reservations",
+            "type": "urn:tag:planning:place",
+            "weight": 0.8500000000000001
+          },
+          {
+            "id": "urn:tag:amenity:place:bar_onsite",
+            "name": "Bar onsite",
+            "type": "urn:tag:amenity:place",
+            "weight": 0.9200385356454721
+          },
+          {
+            "id": "urn:tag:offerings:place:quick_bite",
+            "name": "Quick bite",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.8846153846153846
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:grilled_chicken",
+            "name": "Al Grilled Chicken",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:offerings:place:wine",
+            "name": "Wine",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.6826923076923077
+          },
+          {
+            "id": "urn:tag:amenity:place:restroom",
+            "name": "Restroom",
+            "type": "urn:tag:amenity:place",
+            "weight": 0.9219653179190752
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:chutney_sandwich",
+            "name": "Chutney Sandwich",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:grilled_sandwiches",
+            "name": "Grilled Sandwiches",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:children:place:good_kids",
+            "name": "Good for kids",
+            "type": "urn:tag:children:place",
+            "weight": 0.8333333333333333
+          },
+          {
+            "id": "urn:tag:category:place:health_food_restaurant",
+            "name": "Health Food Restaurant",
+            "type": "urn:tag:category:place",
+            "weight": 0.9442724458204335
+          },
+          {
+            "id": "urn:tag:genre:place:restaurant",
+            "name": "Restaurant",
+            "type": "urn:tag:genre:place",
+            "weight": 0.9729374671571203
+          },
+          {
+            "id": "urn:tag:offerings:place:dishes",
+            "name": "Dishes",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.16346153846153846
+          },
+          {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Cafe",
+            "type": "urn:tag:genre:place",
+            "weight": 0.9934314240672621
+          },
+          {
+            "id": "urn:tag:offerings:place:vegetarian_options",
+            "name": "Vegetarian Meals",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.9519230769230769
+          },
+          {
+            "id": "urn:tag:offerings:place:beer",
+            "name": "Beer",
+            "type": "urn:tag:offerings:place",
+            "weight": 0.5865384615384616
+          },
+          {
+            "id": "urn:tag:credit_card:place:visa",
+            "name": "VISA",
+            "type": "urn:tag:credit_card:place",
+            "weight": 1
+          },
+          {
+            "id": "urn:tag:specialty_dish:place:chicken_puff",
+            "name": "Chicken Puff",
+            "type": "urn:tag:specialty_dish:place"
+          },
+          {
+            "id": "urn:tag:ambience:place:large_group",
+            "name": "Large Group",
+            "type": "urn:tag:ambience:place",
+            "weight": 0.9459459459459459
+          },
+          {
+            "id": "urn:tag:inclusivity:place:identifies_as_women_owned",
+            "name": "Identifies as women-owned",
+            "type": "urn:tag:inclusivity:place"
+          }
+        ],
+        "query": {
+          "measurements": {
+            "audience_growth": -2.18868055701264
+          }
+        },
+        "disambiguation": "Bakthiar Plaza 6, MG Road, Opposite Bombay Store, Camp Pune, Maharashtra 411001 India",
+        "external": {
+          "tripadvisor": [
+            {
+              "id": "d803989",
+              "rating": 4,
+              "rating_count": 462
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "type": "deprecated",
+      "parameter": "filter.entities",
+      "message": "The filter.entities parameter is deprecated, please update your query with filter.results.entities"
+    }
+  ],
+  "duration": 8
+}
