@@ -18,19 +18,19 @@ Key Features:
 
 Conversational ChatBot API:  
 
-  • Processes user input using generative AI to decide whether to recommend restaurants based on past visits or for new dining experiences. fileciteturn0file1
+  • Processes user input using generative AI to decide whether to recommend restaurants based on past visits or for new dining experiences.
 
 Restaurant Recommendations:  
 
-  • Integrates with Qloo to get recommendations and insights based on location and food preferences. The service dynamically searches using multiple radius values and tag filtering for accurate recommendations. fileciteturn0file2
+  • Integrates with Qloo to get recommendations and insights based on location and food preferences. The service dynamically searches using multiple radius values and tag filtering for accurate recommendations.
 
 Firebase Integration:  
 
-  • Stores and retrieves chat sessions, user profiles, and feedback using Firebase’s Firestore service for persistent state management. fileciteturn0file0
+  • Stores and retrieves chat sessions, user profiles, and feedback using Firebase’s Firestore service for persistent state management.
 
 Generative AI Assistance:  
 
-  • Uses Google Generative AI (Gemini) to extract keywords from user prompts and determine recommendation type (old visits vs. new search). fileciteturn0file1, fileciteturn0file7
+  • Uses Google Generative AI (Gemini) to extract keywords from user prompts and determine recommendation type (old visits vs. new search).
 
 Frontend Application:  
 
@@ -38,7 +38,7 @@ Frontend Application:
 
 Testing Endpoints:  
 
-  • Contains endpoints such as /api/test-qloo for quickly validating the connection with the Qloo API (with fallback solutions in case the API key isn’t available). fileciteturn0file10
+  • Contains endpoints such as /api/test-qloo for quickly validating the connection with the Qloo API (with fallback solutions in case the API key isn’t available).
 
 ------------------------------------------------------------
 
@@ -54,15 +54,15 @@ QLOOAPIKEY:
 
   Example:  
 
-  QLOOAPIKEY=yourqlooapikeyhere
+  QLOOAPIKEY = yourqlooapikeyhere
 
-FIREBASEAPIKEY, FIREBASEAUTHDOMAIN, FIREBASEPROJECTID, FIREBASESTORAGEBUCKET, FIREBASEMESSAGINGSENDERID, FIREBASEAPP_ID:  
+FIREBASE API KEY, FIREBASE AUTHDOMAIN, FIREBASE PROJECTID, FIREBASE STORAGE BUCKET, FIREBASE MESSAGING SENDERID, FIREBASE APP_ID:  
 
   • Firebase configuration credentials required for user session and feedback storage. These are imported into the backend and used to initialize the Firebase Admin SDK.  
 
   (See configuration in the backend where firebase_config is defined using environment variables.) fileciteturn0file0
 
-GEMINIAPIKEY:  
+GEMINI API KEY:  
 
   • API key needed for the Gemini generative model which powers language understanding and responses.  
 
@@ -149,7 +149,7 @@ Navigate to the frontend directory:
    Code:
 
    --------------------------------------------------------------------------------
-
+   npm create vite@latest frontend -- --template react-ts
    cd ../frontend
 
    --------------------------------------------------------------------------------
@@ -161,6 +161,8 @@ Install Node.js dependencies:
    --------------------------------------------------------------------------------
 
    npm install
+   npm install axios date-fns framer-motion lucide-react @types/node
+   npm install -D tailwindcss postcss autoprefixer
 
    --------------------------------------------------------------------------------
 
