@@ -138,15 +138,46 @@ export const authService = {
   async getCurrentUserData(): Promise<UserData | null> {
     try {
       const user = auth.currentUser;
-      if (!user) return null;
-
-      const userDoc = await getDoc(doc(db, 'users', user.uid));
-      if (userDoc.exists()) {
-        return userDoc.data() as UserData;
+      if (!user) {
+        console.warn("⚠ No authenticated user found.");
+        return null;
       }
-      return null;
+
+      // Timeout protection (5 seconds)
+      const timeout = new Promise<null>((_, reject) =>
+        setTimeout(() => reject(new Error("Firestore request timed out")), 5000)
+      );
+
+      const fetchUserData = (async () => {
+        const userDocRef = doc(db, "users", user.uid);
+        const userDoc = await getDoc(userDocRef);
+
+        if (userDoc.exists()) {
+          console.log("✅ User data loaded from Firestore:", userDoc.data());
+          return userDoc.data() as UserData;
+        } else {
+          console.warn("⚠ No Firestore record found for this user. Creating one...");
+
+          // Auto-create user data from Firebase Auth profile
+          const newUserData: UserData = {
+            uid: user.uid,
+            email: user.email || "",
+            name: user.displayName || "New User",
+            age: 0,
+            defaultLocation: "",
+            currentLocation: "",
+            createdAt: new Date().toISOString(),
+          };
+
+          await setDoc(userDocRef, newUserData);
+          console.log("✅ Firestore record created for user:", newUserData);
+          return newUserData;
+        }
+      })();
+
+      return await Promise.race([fetchUserData, timeout]);
     } catch (error) {
-      console.error('Error getting user data:', error);
+      console.error("❌ Error fetching current user data:", error);
       return null;
     }
   },
