@@ -62,7 +62,7 @@ FIREBASE API KEY, FIREBASE AUTHDOMAIN, FIREBASE PROJECTID, FIREBASE STORAGE BUCK
 
   • Firebase configuration credentials required for user session and feedback storage. These are imported into the backend and used to initialize the Firebase Admin SDK.  
 
-  (See configuration in the backend where firebase_config is defined using environment variables.) fileciteturn0file0
+  (See configuration in the backend where firebase_config is defined using environment variables.)
 
 GEMINI API KEY:  
 
@@ -168,7 +168,7 @@ Install Node.js dependencies:
 
    --------------------------------------------------------------------------------
 
-   • The frontend package includes settings for React, TypeScript, and ESLint (see eslint.config.js for linting rules). fileciteturn0file10
+   • The frontend package includes settings for React, TypeScript, and ESLint (see eslint.config.js for linting rules).
 
 Run the Frontend Development Server:
 
@@ -239,5 +239,3 @@ Firebase Integration for Feedback:
 By ensuring proper configuration of all API keys and environment variables, this project can be used as a full-stack demonstration of integrating a cutting-edge recommendation service with conversational AI. Enjoy exploring Qloo_Project and extend its functionalities as desired!
 
 ------------------------------------------------------------
-
-This README covers the complete setup, configuration, and usage details based solely on the content from the repository’s source files fileciteturn0file0, fileciteturn0file2, and others.
